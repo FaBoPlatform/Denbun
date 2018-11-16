@@ -1855,14 +1855,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="13" x="-1.54" y="0.7" dx="1" dy="0.27" layer="1"/>
 <smd name="16" x="-1.54" y="-0.7" dx="1" dy="0.27" layer="1"/>
 <text x="-1.5" y="2.2" size="0.6096" layer="21">&gt;NAME</text>
-<smd name="EP" x="0.31" y="0.32" dx="0.3" dy="0.3" layer="1"/>
-<polygon width="0.0762" layer="1">
-<vertex x="0.544575" y="0.56185"/>
-<vertex x="0.5532125" y="-0.535940625"/>
-<vertex x="-0.271015625" y="-0.535940625"/>
-<vertex x="-0.53619375" y="-0.2707625"/>
-<vertex x="-0.53314375" y="0.56769375"/>
-</polygon>
+<smd name="EP" x="0.0052" y="0.02028125" dx="1.143" dy="1.143" layer="1"/>
 </package>
 </packages>
 <symbols>
