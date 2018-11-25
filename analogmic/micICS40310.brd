@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -167,9 +167,9 @@
 <text x="-0.16" y="1.86" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
 <smd name="1" x="-0.61" y="0.92" dx="0.9" dy="0.68" layer="1" rot="R90"/>
 <smd name="3" x="0.61" y="0.92" dx="0.9" dy="0.68" layer="1" rot="R90"/>
-<wire x1="-0.6096" y1="-0.3302" x2="0.2794" y2="0" width="0.2032" layer="21" curve="-91.454216"/>
-<wire x1="0.0254" y1="-1.2954" x2="-0.6604" y2="-0.6604" width="0.2032" layer="21" curve="-86.744884"/>
-<wire x1="0.508" y1="-0.2032" x2="0.381" y2="-1.1684" width="0.2032" layer="21" curve="-98.130102"/>
+<wire x1="-0.6096" y1="-0.3302" x2="0.2794" y2="0" width="0.2032" layer="31" curve="-91.454216"/>
+<wire x1="0.0254" y1="-1.2954" x2="-0.6604" y2="-0.6604" width="0.2032" layer="31" curve="-86.744884"/>
+<wire x1="0.508" y1="-0.2032" x2="0.381" y2="-1.1684" width="0.2032" layer="31" curve="-98.130102"/>
 </package>
 </packages>
 </library>
@@ -190,39 +190,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 <rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
-</package>
-</packages>
-</library>
-<library name="FaBo-Template">
-<description>&lt;h3&gt;FaBo Template&lt;/h3&gt;
-FaBo Bricks/Beacons/Breakouts&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
-<packages>
-<package name="FABO_BRICK_3PIN_S03B-PASK-2">
-<pad name="GND" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<hole x="3.5" y="2.1" drill="1.1"/>
-<wire x1="4" y1="-3.5" x2="4" y2="8.2" width="0.127" layer="51"/>
-<wire x1="-4" y1="-3.5" x2="-4" y2="8.2" width="0.127" layer="51"/>
-<wire x1="4" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
-<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.127" layer="51"/>
-<wire x1="-2" y1="8.2" x2="-4" y2="8.2" width="0.127" layer="51"/>
-<wire x1="4" y1="-3.5" x2="3.3" y2="-3.5" width="0.127" layer="51"/>
-<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
-<hole x="-3.5" y="2.1" drill="1.1"/>
-<wire x1="-3.3" y1="-3.5" x2="-4" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.127" layer="51"/>
-<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.127" layer="51"/>
-<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.127" layer="51"/>
-<text x="-2" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<text x="0" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="2" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<wire x1="-3.3" y1="-3.5" x2="-3.3" y2="0.5" width="0.127" layer="51"/>
-<wire x1="3.3" y1="-3.5" x2="3.3" y2="0.5" width="0.127" layer="51"/>
-<wire x1="3.3" y1="0.5" x2="-3.3" y2="0.5" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>
@@ -1911,6 +1878,51 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </package>
 </packages>
 </library>
+<library name="FaBo-Resistors">
+<description>&lt;h3&gt;FaBo Resistors&lt;/h3&gt;
+Resistors&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="0603">
+<wire x1="-1.48" y1="0.6" x2="1.48" y2="0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="0.6" x2="1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="-0.6" x2="-1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="-1.48" y1="-0.6" x2="-1.48" y2="0.6" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
+</package>
+</packages>
+</library>
+<library name="FaBo-Template">
+<description>&lt;h3&gt;FaBo Template&lt;/h3&gt;
+FaBo Bricks/Beacons/Breakouts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="FABO_BRICK_3PIN_B03B-PASK-1_NAME_BOTTOM">
+<pad name="GND" x="-2" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="3.5" y="1.7" drill="1.1"/>
+<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.1" layer="51"/>
+<text x="0" y="-5.715" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2110,27 +2122,26 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.7" y="12.389" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
 <attribute name="VALUE" x="5.7" y="11.5" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
-<element name="." library="FaBo-Template" package="FABO_BRICK_3PIN_S03B-PASK-2" value="" x="4.4" y="4.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="4.4" y="8.945" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center"/>
-</element>
-<element name="U$2" library="FaBo-Logo" package="LOGO_FABO_S" value="" x="4.6" y="6.4" smashed="yes"/>
+<element name="U$2" library="FaBo-Logo" package="LOGO_FABO_S" value="" x="4.6" y="5.8" smashed="yes"/>
 <element name="ICS40310" library="FaBo-Sound" package="ICS40310" value="ANALOG-MICICS40310" x="4.4" y="15.24" smashed="yes">
 <attribute name="NAME" x="4.24" y="17.1" size="0.6096" layer="25" align="bottom-center"/>
+</element>
+<element name="R1" library="FaBo-Resistors" package="0603" value="2K" x="6.35" y="8.89" smashed="yes">
+<attribute name="NAME" x="6.35" y="9.779" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="6.35" y="8.89" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
+<element name="R2" library="FaBo-Resistors" package="0603" value="1K" x="2.54" y="8.89" smashed="yes">
+<attribute name="NAME" x="2.54" y="9.779" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="2.54" y="8.89" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
+<element name="J1" library="FaBo-Template" package="FABO_BRICK_3PIN_B03B-PASK-1_NAME_BOTTOM" value="" x="4.5" y="3.2" smashed="yes">
+<attribute name="NAME" x="4.5" y="-2.515" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
-<contactref element="." pad="GND"/>
 <contactref element="ICS40310" pad="2"/>
-<wire x1="6.4008" y1="12.6492" x2="6.4008" y2="11.5824" width="0.1524" layer="1"/>
-<wire x1="4.4196" y1="14.6304" x2="6.4008" y2="12.6492" width="0.1524" layer="1"/>
-<wire x1="6.4008" y1="11.5824" x2="6.55" y2="11.5" width="0.1524" layer="1"/>
-<wire x1="4.4196" y1="14.6304" x2="4.4" y2="14.64" width="0.1524" layer="1"/>
-<wire x1="6.2484" y1="12.8016" x2="6.2484" y2="4.572" width="0.1524" layer="16"/>
-<wire x1="4.4196" y1="14.6304" x2="6.2484" y2="12.8016" width="0.1524" layer="16"/>
-<wire x1="6.2484" y1="4.572" x2="6.4" y2="4.5" width="0.1524" layer="16"/>
-<wire x1="4.4196" y1="14.6304" x2="4.4" y2="14.64" width="0.1524" layer="16"/>
 <polygon width="0.1524" layer="16">
 <vertex x="0" y="0"/>
 <vertex x="0" y="19.05"/>
@@ -2143,31 +2154,59 @@ design rules under a new name.</description>
 <vertex x="8.89" y="19.05"/>
 <vertex x="8.89" y="0"/>
 </polygon>
+<contactref element="R2" pad="1"/>
+<contactref element="J1" pad="GND"/>
 </signal>
 <signal name="OUTPUT">
-<contactref element="." pad="I/O"/>
 <contactref element="ICS40310" pad="1"/>
-<wire x1="3.6576" y1="15.3924" x2="3.6576" y2="16.1544" width="0.1524" layer="1"/>
-<wire x1="2.4384" y1="14.1732" x2="3.6576" y2="15.3924" width="0.1524" layer="1"/>
-<wire x1="2.4384" y1="4.572" x2="2.4384" y2="14.1732" width="0.1524" layer="1"/>
-<wire x1="3.6576" y1="16.1544" x2="3.79" y2="16.16" width="0.1524" layer="1"/>
-<wire x1="2.4384" y1="4.572" x2="2.4" y2="4.5" width="0.1524" layer="1"/>
+<contactref element="J1" pad="I/O"/>
+<wire x1="3.81" y1="16.9164" x2="3.81" y2="16.3068" width="0.1524" layer="1"/>
+<wire x1="4.1148" y1="17.2212" x2="3.81" y2="16.9164" width="0.1524" layer="1"/>
+<wire x1="5.6388" y1="17.2212" x2="4.1148" y2="17.2212" width="0.1524" layer="1"/>
+<wire x1="8.0772" y1="14.7828" x2="5.6388" y2="17.2212" width="0.1524" layer="1"/>
+<wire x1="8.0772" y1="9.906" x2="8.0772" y2="14.7828" width="0.1524" layer="1"/>
+<wire x1="8.382" y1="9.6012" x2="8.0772" y2="9.906" width="0.1524" layer="1"/>
+<wire x1="8.382" y1="8.2296" x2="8.382" y2="9.6012" width="0.1524" layer="1"/>
+<wire x1="7.4676" y1="7.3152" x2="8.382" y2="8.2296" width="0.1524" layer="1"/>
+<wire x1="7.4676" y1="6.096" x2="7.4676" y2="7.3152" width="0.1524" layer="1"/>
+<wire x1="6.7056" y1="5.334" x2="7.4676" y2="6.096" width="0.1524" layer="1"/>
+<wire x1="6.7056" y1="3.3528" x2="6.7056" y2="5.334" width="0.1524" layer="1"/>
+<wire x1="6.5532" y1="3.2004" x2="6.7056" y2="3.3528" width="0.1524" layer="1"/>
+<wire x1="3.81" y1="16.3068" x2="3.79" y2="16.16" width="0.1524" layer="1"/>
+<wire x1="6.5532" y1="3.2004" x2="6.5" y2="3.2" width="0.1524" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="C1" pad="1"/>
-<contactref element="." pad="VCC"/>
+<contactref element="R1" pad="2"/>
+<contactref element="J1" pad="VCC"/>
+<wire x1="7.1628" y1="9.6012" x2="7.1628" y2="8.9916" width="0.1524" layer="1"/>
+<wire x1="6.5532" y1="10.2108" x2="7.1628" y2="9.6012" width="0.1524" layer="1"/>
+<wire x1="5.9436" y1="10.2108" x2="6.5532" y2="10.2108" width="0.1524" layer="1"/>
+<wire x1="4.7244" y1="11.43" x2="5.9436" y2="10.2108" width="0.1524" layer="1"/>
+<wire x1="7.1628" y1="8.9916" x2="7.2" y2="8.89" width="0.1524" layer="1"/>
+<wire x1="4.7244" y1="11.43" x2="4.85" y2="11.5" width="0.1524" layer="1"/>
+<wire x1="7.1628" y1="6.858" x2="7.1628" y2="8.8392" width="0.1524" layer="1"/>
+<wire x1="4.572" y1="4.2672" x2="7.1628" y2="6.858" width="0.1524" layer="1"/>
+<wire x1="4.572" y1="3.2004" x2="4.572" y2="4.2672" width="0.1524" layer="1"/>
+<wire x1="7.1628" y1="8.8392" x2="7.2" y2="8.89" width="0.1524" layer="1"/>
+<wire x1="4.572" y1="3.2004" x2="4.5" y2="3.2" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$1">
+<contactref element="R1" pad="1"/>
+<contactref element="R2" pad="2"/>
 <contactref element="ICS40310" pad="3"/>
-<wire x1="5.0292" y1="15.5448" x2="5.0292" y2="16.1544" width="0.1524" layer="1"/>
-<wire x1="7.4676" y1="13.1064" x2="5.0292" y2="15.5448" width="0.1524" layer="1"/>
-<wire x1="7.4676" y1="10.9728" x2="7.4676" y2="13.1064" width="0.1524" layer="1"/>
-<wire x1="7.1628" y1="10.668" x2="7.4676" y2="10.9728" width="0.1524" layer="1"/>
-<wire x1="5.6388" y1="10.668" x2="7.1628" y2="10.668" width="0.1524" layer="1"/>
-<wire x1="4.8768" y1="11.43" x2="5.6388" y2="10.668" width="0.1524" layer="1"/>
+<wire x1="5.4864" y1="16.1544" x2="5.0292" y2="16.1544" width="0.1524" layer="1"/>
+<wire x1="5.9436" y1="15.6972" x2="5.4864" y2="16.1544" width="0.1524" layer="1"/>
+<wire x1="5.9436" y1="14.1732" x2="5.9436" y2="15.6972" width="0.1524" layer="1"/>
+<wire x1="4.4196" y1="12.6492" x2="5.9436" y2="14.1732" width="0.1524" layer="1"/>
+<wire x1="4.1148" y1="12.6492" x2="4.4196" y2="12.6492" width="0.1524" layer="1"/>
+<wire x1="3.6576" y1="12.192" x2="4.1148" y2="12.6492" width="0.1524" layer="1"/>
+<wire x1="3.6576" y1="9.144" x2="3.6576" y2="12.192" width="0.1524" layer="1"/>
+<wire x1="3.5052" y1="8.9916" x2="3.6576" y2="9.144" width="0.1524" layer="1"/>
 <wire x1="5.0292" y1="16.1544" x2="5.01" y2="16.16" width="0.1524" layer="1"/>
-<wire x1="4.8768" y1="11.43" x2="4.85" y2="11.5" width="0.1524" layer="1"/>
-<wire x1="4.4196" y1="9.4488" x2="4.4196" y2="4.572" width="0.1524" layer="1"/>
-<wire x1="5.6388" y1="10.668" x2="4.4196" y2="9.4488" width="0.1524" layer="1"/>
-<wire x1="4.4196" y1="4.572" x2="4.4" y2="4.5" width="0.1524" layer="1"/>
+<wire x1="3.5052" y1="8.9916" x2="5.4864" y2="8.9916" width="0.1524" layer="1"/>
+<wire x1="5.4864" y1="8.9916" x2="5.5" y2="8.89" width="0.1524" layer="1"/>
+<wire x1="3.5052" y1="8.9916" x2="3.39" y2="8.89" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
