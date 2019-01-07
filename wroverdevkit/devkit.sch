@@ -898,8 +898,6 @@
 <smd name="P$1" x="0" y="0" dx="1.5" dy="1.5" layer="1" stop="no" cream="no"/>
 <rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="31"/>
 <rectangle x1="-1" y1="-1" x2="1" y2="1" layer="29"/>
-<rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="32"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="30"/>
 <rectangle x1="-1" y1="-1" x2="1" y2="1" layer="41"/>
 </package>
 <package name="LOGO_FABO_L">
@@ -15458,7 +15456,7 @@
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">0.3</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">0.4</text>
 <text x="208.28" y="99.06" size="1.27" layer="97">USB VBUS SOURCE</text>
 </plain>
 <instances>
@@ -15542,14 +15540,14 @@
 <label x="48.26" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
-<label x="157.48" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="233.68" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
 <label x="233.68" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CN2" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="RXD"/>
+<wire x1="160.02" y1="50.8" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
+<label x="160.02" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -15559,14 +15557,14 @@
 <label x="48.26" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="RXD"/>
-<wire x1="157.48" y1="50.8" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
-<label x="157.48" y="50.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="233.68" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
 <label x="233.68" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CN2" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<label x="160.02" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SENSOR_VP" class="0">
